@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <body>
+        <table>
+                    <tr>
+                      <th>Amount</th>
+                      <th>From Currency</th> 
+                      <th>To Currency</th>
+                      
+                    </tr>
+                    <tr>
+                      <td><input type="number" id="qt" ></td>
+                      <td>
+                      <select id="sel1">
+                          <option value="VND" >Vietnam</option>
+                          <option value="USD" >USD</option>
+                      </select></td> 
+                      <td>
+                          <select id="sel2">
+                              <option value="USD" >USD</option>
+                              <option value="VND" >Vietnam</option>
+                              <option value="eur">eur</option>
+                              <option value="nnd">nnd</option>
+                          </select>
+                      </td>
+                      <td><button id="convert" onclick="abc();">cv</td>
+                    </tr>
+                   
+                  </table>
+                
+                  
+    <script type=text/javascript>
+       function abc(){
+        var x = document.getElementById("qt").value;
+            y = document.getElementById("sel1").value;
+            z =document.getElementById("sel2").value;
+      switch(y=="VND"){
+          case z=="USD":    
+              alert(x/23000 + "USD");
+              break;
+          case z=="VND":
+          alert(x + "VND");
+              break;
+          case z=="eur":
+          alert(x/25000 + "eur");
+              break;
+          case z=="nnd":
+          alert(x/30000 + "nnd");
+       
+
+        }
+       }
+
+       
+        
+        
+        
+            
+        
+    </script>
+
+    </body>
+</html>

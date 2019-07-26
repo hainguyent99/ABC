@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <body>
+        <table>
+                    <tr>
+                      <th><input type="text" id ="text1"></th>
+                      <th><input type="text" id ="text2"></th> 
+                      
+                      
+                    </tr>
+                    <tr>
+                      <td><input type="submit" value="Addition(+)" onclick="phepcong()"></td>
+                      <td>
+                        <input type="submit" value="Subtraction(-)" onclick="pheptru()">
+                      <td>
+                        <input type="submit" value="Multiplication(X)" onclick="phepnhan()">
+                      </td>
+                      <td>
+                        <input type="submit" value="Division(/)" onclick="phepchia()" ></td>
+                    </tr>
+                    
+                  </table>
+                  <div id="di">gg</div>
+                  
+    <script type=text/javascript>
+    
+    function phepcong(){
+        var gtr1 = +document.getElementById("text1").value;
+        var gtr2 = +document.getElementById("text2").value;
+        document.getElementById("di").innerHTML = gtr1 + gtr2;
+
+    }
+    function pheptru(){
+        var gtr1 = +document.getElementById("text1").value;
+        var gtr2 = +document.getElementById("text2").value;
+        document.getElementById("di").innerHTML = gtr1 - gtr2;
+
+    }
+    function phepnhan(){
+        var gtr1 = +document.getElementById("text1").value;
+        var gtr2 = +document.getElementById("text2").value;
+        document.getElementById("di").innerHTML = gtr1 * gtr2;
+
+    }
+    function phepchia(){
+        var gtr1 = +document.getElementById("text1").value;
+        var gtr2 = +document.getElementById("text2").value;
+        document.getElementById("di").innerHTML = gtr1 / gtr2;
+
+    }
+    </script>
+
+    </body>
+</html>
