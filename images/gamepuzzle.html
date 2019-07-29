@@ -1,0 +1,114 @@
+<div>    <img src ='/images/cat1.jpg' id='img1' alt=''onclick=clickanh1() > <div>
+<div>     <img src ='/images/cat2.jpg' id='img2' alt='' onclick=clickanh2()></div> 
+<div>      <img src ='/images/cat3.jpg' id='img3' alt='' onclick=clickanh3()></div>
+    <div>      <img src ='/images/cat4.jpg' id='img4' alt='' onclick=clickanh4()></div>
+        <div>    <img src ='/images/cat5.jpg' id='img5' alt='' onclick=clickanh5()></div>  
+    
+
+
+<script>
+    var img1 = document.getElementById('img1');
+    var img2 = document.getElementById('img2');
+    var img3 = document.getElementById('img3');
+    var img4 = document.getElementById('img4');
+    var img5 = document.getElementById('img5');
+
+    function clickanh1(){
+        var rand= Math.floor((Math.random() * 3) + 1);
+        switch(rand){
+            case 1: 
+            img1.src = '/images/cat1.jpg';
+            
+            break;
+            case 2: 
+            img1.src = '/images/k1.jpg';
+            
+            break;
+            case 3: 
+            img1.src = '/images/p1.jpg';
+            
+            break;
+           
+
+        }
+    }
+    function clickanh2(){
+        var rand= Math.floor((Math.random() * 3) + 1);
+        switch(rand){
+            case 1: 
+            img2.src = '/images/cat2.jpg';
+            
+            break;
+            case 2: 
+            img1.src = '/images/k2.jpg';
+            
+            break;
+            case 3: 
+            img1.src = '/images/p2.jpg';
+            
+            break;
+           
+
+        }
+    }
+    function clickanh3(){
+        var rand= Math.floor((Math.random() * 3) + 1);
+        switch(rand){
+            case 1: 
+            img3.src = '/images/cat3.jpg';
+            
+            break;
+            case 2: 
+            img3.src = '/images/k3.jpg';
+            
+            break;
+            case 3: 
+            img3.src = '/images/p3.jpg';
+            
+            break;
+           
+
+        }
+    }
+    function clickanh4(){
+        var rand= Math.floor((Math.random() * 3) + 1);
+        switch(rand){
+            case 1: 
+            img4.src = '/images/cat4.jpg';
+            
+            break;
+            case 2: 
+            img4.src = '/images/k4.jpg';
+            
+            break;
+            case 3: 
+            img4.src = '/images/p4.jpg';
+            
+            break;
+           
+
+        }
+    }
+    function clickanh5(){
+        var rand= Math.floor((Math.random() * 3) + 1);
+        switch(rand){
+            case 1: 
+            img4.src = '/images/cat5.jpg';
+            
+            break;
+            case 2: 
+            img4.src = '/images/k5.jpg';
+            
+            break;
+            case 3: 
+            img4.src = '/images/p5.jpg';
+            
+            break;
+           
+
+        }
+    }
+</script>
+</body>
+
+</html>
