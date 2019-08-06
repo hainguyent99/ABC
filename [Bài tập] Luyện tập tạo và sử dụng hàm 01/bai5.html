@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body onload=gtrib()>
+    
+<script type=text/javascript>
+   var a=[
+    ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'],
+    ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+    ]
+function abc(b){
+ for(var i=0;i<a[0].length;i++){
+     if(b === a[0][i]){
+          a[1][i] = b;
+          return true;
+         
+     } else if(i===a[0].length-1){
+         return false;
+     } else {
+         continue;
+     }
+         
+     }
+ }
+
+function gtrib(){
+var tenngoisao = prompt('nhap ngoi sao');
+
+if(abc(tenngoisao)){
+document.write(a[0]);
+document.write('<br>');
+document.write(a[1]);
+
+} else {
+    alert('kocongoisaocanthaythe');
+}
+}
+
+</script>
+</body>
+</html>
