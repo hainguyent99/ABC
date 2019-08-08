@@ -1,0 +1,19 @@
+<script>
+    function Temperature(nhietdo) {
+        this.doC = nhietdo;
+        this.doCsangF = function () {
+            var doF = this.doC * 3.2;
+            return doF;
+        }
+        this.doCsangKenvin = function () {
+            var Kenvin = this.doC * 5;
+            return Kenvin;
+        }
+    }
+    var temperature = new Temperature(25);
+    alert(temperature.doCsangF());
+    alert(temperature.doCsangKenvin());
+
+
+
+</script>
